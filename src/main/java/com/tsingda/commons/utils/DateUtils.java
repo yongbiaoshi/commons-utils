@@ -1,5 +1,6 @@
 package com.tsingda.commons.utils;
 
+import java.text.ParseException;
 import java.time.DayOfWeek;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -111,11 +112,11 @@ public class DateUtils {
     }
 
     /**
-     * 指定日期的零�?
+     * 指定日期的零点
      * 
      * @param date
      *            日期
-     * @return 指定日期的零�?
+     * @return 指定日期的零点
      * @throws ParseException
      */
     public static Date zeroOf(Date date) {
@@ -123,9 +124,9 @@ public class DateUtils {
     }
 
     /**
-     * 今天的结束时�?
+     * 今天的结束时间
      * 
-     * @return 今天的结�?
+     * @return 今天的结束
      * @throws ParseException
      */
     public static Date endOfToday() {
@@ -133,11 +134,11 @@ public class DateUtils {
     }
 
     /**
-     * 指定日期的结束时�?
+     * 指定日期的结束时间
      * 
      * @param date
      *            日期
-     * @return 指定日期的结束时�?
+     * @return 指定日期的结束时间
      * @throws ParseException
      */
     public static Date endOf(Date date) {
@@ -195,14 +196,14 @@ public class DateUtils {
      * 两个时间段取交集
      * 
      * @param fStart
-     *            时间�?1的开始时�?
+     *            时间段1的开始时间
      * @param fEnd
-     *            时间�?1的结束时�?
+     *            时间段1的结束时间
      * @param sStart
-     *            时间�?2的开始时�?
+     *            时间段2的开始时间
      * @param sEnd
-     *            时间�?2的结束时�?
-     * @return 两个时间段的交集，单位毫秒（ms），如果没有交集返回0�?
+     *            时间段2的结束时间
+     * @return 两个时间段的交集，单位毫秒（ms），如果没有交集返回0，
      */
     public static long intersection(Date fStart, Date fEnd, Date sStart, Date sEnd) {
         long fst = fStart.getTime();
@@ -215,11 +216,11 @@ public class DateUtils {
     }
 
     /**
-     * 周一0�?
+     * 周一0点
      * 
      * @param date
      *            日期
-     * @return 周一0�?
+     * @return 周一0点
      * @throws ParseException
      */
     public static Date mondayZero(Date date) {
@@ -241,7 +242,7 @@ public class DateUtils {
     }
 
     /**
-     * 返回指定日期的当前月份的第一�?
+     * 返回指定日期的当前月份的第一天
      * 
      * @param date
      * @return
@@ -253,7 +254,7 @@ public class DateUtils {
     }
 
     /**
-     * 返回指定日期当前月份的最后一�?
+     * 返回指定日期当前月份的最后一天
      * 
      * @param date
      * @return
@@ -265,7 +266,7 @@ public class DateUtils {
     }
 
     /**
-     * 功能描述：返回年�?
+     * 功能描述：返回年份
      * 
      * @param date
      *            Date 日期
@@ -276,7 +277,7 @@ public class DateUtils {
     }
 
     /**
-     * 功能描述：返回月�?
+     * 功能描述：返回月份
      * 
      * @param date
      *            Date 日期
