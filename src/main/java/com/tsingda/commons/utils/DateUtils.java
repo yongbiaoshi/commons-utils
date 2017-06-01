@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class DateUtil {
+public class DateUtils {
 
     public static final ZoneId ZONE = ZoneId.systemDefault();
 
@@ -111,11 +111,11 @@ public class DateUtil {
     }
 
     /**
-     * 指定日期的零�?
+     * 指定日期的零�?
      * 
      * @param date
      *            日期
-     * @return 指定日期的零�?
+     * @return 指定日期的零�?
      * @throws ParseException
      */
     public static Date zeroOf(Date date) {
@@ -123,9 +123,9 @@ public class DateUtil {
     }
 
     /**
-     * 今天的结束时�?
+     * 今天的结束时�?
      * 
-     * @return 今天的结�?
+     * @return 今天的结�?
      * @throws ParseException
      */
     public static Date endOfToday() {
@@ -133,11 +133,11 @@ public class DateUtil {
     }
 
     /**
-     * 指定日期的结束时�?
+     * 指定日期的结束时�?
      * 
      * @param date
      *            日期
-     * @return 指定日期的结束时�?
+     * @return 指定日期的结束时�?
      * @throws ParseException
      */
     public static Date endOf(Date date) {
@@ -195,14 +195,14 @@ public class DateUtil {
      * 两个时间段取交集
      * 
      * @param fStart
-     *            时间�?1的开始时�?
+     *            时间�?1的开始时�?
      * @param fEnd
-     *            时间�?1的结束时�?
+     *            时间�?1的结束时�?
      * @param sStart
-     *            时间�?2的开始时�?
+     *            时间�?2的开始时�?
      * @param sEnd
-     *            时间�?2的结束时�?
-     * @return 两个时间段的交集，单位毫秒（ms），如果没有交集返回0�?
+     *            时间�?2的结束时�?
+     * @return 两个时间段的交集，单位毫秒（ms），如果没有交集返回0�?
      */
     public static long intersection(Date fStart, Date fEnd, Date sStart, Date sEnd) {
         long fst = fStart.getTime();
@@ -215,11 +215,11 @@ public class DateUtil {
     }
 
     /**
-     * 周一0�?
+     * 周一0�?
      * 
      * @param date
      *            日期
-     * @return 周一0�?
+     * @return 周一0�?
      * @throws ParseException
      */
     public static Date mondayZero(Date date) {
@@ -241,7 +241,7 @@ public class DateUtil {
     }
 
     /**
-     * 返回指定日期的当前月份的第一�?
+     * 返回指定日期的当前月份的第一�?
      * 
      * @param date
      * @return
@@ -253,7 +253,7 @@ public class DateUtil {
     }
 
     /**
-     * 返回指定日期当前月份的最后一�?
+     * 返回指定日期当前月份的最后一�?
      * 
      * @param date
      * @return
@@ -265,7 +265,7 @@ public class DateUtil {
     }
 
     /**
-     * 功能描述：返回年�?
+     * 功能描述：返回年�?
      * 
      * @param date
      *            Date 日期
@@ -276,7 +276,7 @@ public class DateUtil {
     }
 
     /**
-     * 功能描述：返回月�?
+     * 功能描述：返回月�?
      * 
      * @param date
      *            Date 日期

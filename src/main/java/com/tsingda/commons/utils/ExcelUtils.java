@@ -16,7 +16,7 @@ import org.apache.poi.xssf.streaming.SXSSFRow;
 import org.apache.poi.xssf.streaming.SXSSFSheet;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
-public class ExcelUtil {
+public class ExcelUtils {
 
     public static final String EXCEL_SUFFIX = ".xlsx";
     public static final Integer DEFAULT_ROW_ACCESS_WINDOW_SIZE = 1000;
